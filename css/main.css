@@ -12,6 +12,27 @@ body{
     max-width: 1111px;
     margin: 0 auto;
 }
+
+.main-header{
+    display: none;
+}
+.big-footer{
+    display: none;
+}
+.main-header .row {
+   justify-content: space-between;
+   align-items: center;
+}
+.nav-main:nth-child(1){
+    margin-left: 15px;
+}
+.nav-main__link{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #333136;
+}
 .page-title {
    background-image: url(../img/Group\ 5.svg);
    background-color: #E7816B;
@@ -127,6 +148,7 @@ body{
     position: absolute;
     left: 29.39%;
     top: calc(50% - 48px/2 - 183px);
+    text-transform: uppercase;
 }
 
 .service__title {
@@ -152,4 +174,95 @@ body{
 /*==========*/
 .page-title_app-page-title{
     background-position: left;
+}
+.get-in {
+    width: 85%;
+    position: absolute;
+    top: -232px;
+    left: 100px;
+}
+.get-in-content {
+   background-image: url(../img/Group\ 28\ \(1\).jpg);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.get-in-content .row {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.get-in-text {
+    width: 60%;
+}
+
+.get-in-title {
+    width: 42%;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+
+.get-paragrah {
+    width: 67%;
+    text-align: left;
+    color: #fff;
+}
+/*=========================
+    footer
+===========================*/
+.footer {
+    width: 100%;
+}
+
+.footer {
+    background-color: #1D1C1E;
+    padding: 100px 0px 0px 0px;
+}
+.footer-content{
+    border-bottom: 2px solid grey;
+    padding:0 0 30px 0;
+}
+.footer .row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot-link {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin: 0 15px;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+}
+.desingo-contacts{
+    padding: 20px 0;
+}
+.desingo-adress {
+    width: 18%;
+    color: #fff;
+}
+
+.footer-icons {
+    margin-bottom: -48px;
+}
+
+.desingo-span {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    color: gray;
+}
+
+.big-footer {
+    position: relative;
+    margin-top: 267px;
 }

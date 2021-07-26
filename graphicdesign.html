@@ -8,9 +8,27 @@
     <title>Graphic Design</title>
     <link rel="shortcut icon" href="./img/Oval (1).svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/fonts.css">
 </head>
 
 <body>
+    <header id="mainHeader" class="main-header">
+        <div class="container">
+            <div class="row">
+                <a href="#"> <img src="./img/Group 13.svg" alt="logo desingo"> </a>
+                <button class="menu-toggle  open" onclick="openMenu()"> <img src="./img/menu.svg" alt="menu"> </button>
+                <button class="menu-toggle  close" onclick="closeMenu()"> <img src="./img/close.svg" alt="menu-close">
+                </button>
+                <nav id="mainnav" class="nav-main">
+                    <a class="nav-main__link" href="about.html">OUR COMPANY</a>
+                    <a class="nav-main__link" href="location.html">LOCATIONS</a>
+                    <a class="nav-main__link" href="contact.html">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <section>
         <div class="container">
             <div class="page-title">
@@ -78,6 +96,91 @@
             </div>
         </div>
     </section>
+
+    <section class="big-footer">
+
+        <article class="get-in">
+
+            <div class="container">
+                <div class="get-in-content">
+                    <div class="row">
+
+                        <div class="get-in-text">
+
+                            <h2 class="get-in-title">Let’s talk about your project</h2>
+                            <p class=" get-paragrah features-paragraf  ">Ready to take it to the next level? Contact us
+                                today and find out
+                                how our expertise can help
+                                your business grow. </p>
+                        </div>
+                        <div class="get-btn">
+                            <button class="btn " type="button">Get in touch</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="row">
+                        <div class="logo-footer">
+                            <a href="#"> <img src="./img/Group 13 (1).svg" alt="logo"></a>
+                        </div>
+                        <div class="designo-links">
+                            <a class="foot-link" href="about.html">OUR COMPANY</a>
+                            <a class="foot-link" href="location.html">LOCATIONS</a>
+                            <a class="foot-link" href="contact.html">CONTACT</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <address class="desingo-contacts">
+                    <div class="row">
+
+                        <address class="desingo-adress">
+                            <p class="desingo-span"> Designo Central Office 3886 Wellington Street Toronto, Ontario M9C
+                                3J5</p>
+                        </address>
+
+                        <address class="desingo-adress">
+                            <p class="desingo-span"> Contact Us (Central Office) P:<a class="desingo-span"
+                                    href="tel:+12538638967"> +1 253-863-8967</a>
+                                <a class="desingo-span" href="mailto:contact@designo.co"> M:contact@designo.co </a>
+                            </p>
+                        </address>
+                        <div class="footer-icons">
+                            <a target="_blank" href="https://www.facebook.com"> <i class="icon-facebook"></i> </a>
+                            <a target="_blank" href="https://publish.twitter.com"> <i class="icon-twitter"></i> </a>
+                            <a target="_blank" href="https://youtube.com"> <i class="icon-youtube"></i> </a>
+                            <a target="_blank" href="https://instagram.com"> <i class="icon-instagram"></i> </a>
+                            <a target="_blank" href="https://pinterest.com"> <i class="icon-pinterest"></i> </a>
+                        </div>
+
+                    </div>
+                </address>
+            </div>
+
+        </footer>
+    </section>
+
+    <script>
+        const menu = document.getElementById('mainnav');
+        const header = document.getElementById('mainHeader');
+
+        function openMenu() {
+            menu.style.display = 'block';
+            header.classList = 'main-header on';
+        }
+
+        function closeMenu() {
+            menu.style.display = 'none';
+            header.classList = 'main-header';
+        }
+    </script>
 </body>
 
 </html>
