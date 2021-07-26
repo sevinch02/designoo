@@ -3,4 +3,153 @@
 
 body{
     font-family: 'Jost', sans-serif;
+    margin: 0;
+}
+.row{
+    display: flex;
+}
+.container{
+    max-width: 1111px;
+    margin: 0 auto;
+}
+.page-title {
+   background-image: url(../img/Group\ 5.svg);
+   background-color: #E7816B;
+   background-position: right;
+   background-repeat: no-repeat;
+   border-radius: 15px;
+   padding: 32px 0 49px 0 ;
+   margin: 10px 0;
+   text-align: center;
+}
+.page-title::after{
+    content: '';
+    position: absolute;
+    background: #F1F3F5;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    border-radius: 297px 297px 297px 0px;
+    width: 1006px;
+    height: 594px;
+    left: 0px;
+    top: 281px;
+}
+.page-title__heading {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.page-title__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.portfolio {
+    margin-top: 150px;
+    position: relative;
+}
+
+.portfolio  .row {
+    display: grid;
+}
+.column{
+   display: grid;
+   gap:20px 15px;
+}
+.column:nth-child(1){
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+.column:nth-child(2){
+    grid-row: 1 / 2;
+    grid-column: 2 / 3; 
+}
+.column:nth-child(3){
+    grid-row: 1 / 2;
+    grid-column: 3 / 4; 
+}
+.card__content:hover {
+  background-color:#E7816B;
+  color:#FFFFFF;
+  cursor: pointer;
+}/*
+.card__image {}*/
+
+.card__content {
+    width: 350px; 
+    background: #FDF3F0;
+    margin-top: -6px;
+    padding: 26px 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius:16px ;
+    margin-bottom: 20px;
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #E7816B;
+}
+.card__title:hover{
+    color:#FFFFFF;
+}
+
+.card__text {
+    width: 70%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 44px;
+    color: #333136;
+}
+.card__text:hover{
+    color:#FFFFFF; 
+}
+.services{
+    margin-top: 100px;
+    
+}
+.service {
+    position: relative;
+}
+
+.service__image {
+    margin: 0 10px;
+}
+
+.service__info {
+    position: absolute;
+    left: 29.39%;
+    top: calc(50% - 48px/2 - 183px);
+}
+
+.service__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.service__text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    left: 9.36%;
+    top: calc(50% - 48px/2 - -64px);
+}
+/*==========*/
+.page-title_app-page-title{
+    background-position: left;
 }
